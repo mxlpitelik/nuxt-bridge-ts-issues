@@ -7,13 +7,21 @@ import {
   useState,
 } from "#app";
 
-const props = defineProps({});
+const props = defineProps({
+  propName: {
+    type: String,
+    default: 'none',
+    required: true,
+  }
+});
 const router = useRouter();
 
 // import from where ????
-const store = useState();
+const store = useState('test');
 
 const someComputed = computed(() => "nuxt + ts + composition-api + ");
+
+console.log(router, store, someComputed);
 
 onBeforeMount(() => {
   console.log("works!");
