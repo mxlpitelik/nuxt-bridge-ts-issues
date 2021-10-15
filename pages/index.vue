@@ -1,26 +1,23 @@
 <script setup lang="ts">
-
-// import {
-//   defineProps,
-//   useRouter,
-//   useStore,
-//   computed,
-//   ref,
-//   onBeforeMount
-// } from '?????';
+import {
+  defineProps,
+  useRouter,
+  computed,
+  onBeforeMount,
+  useState,
+} from "#app";
 
 const props = defineProps({});
 const router = useRouter();
 
 // import from where ????
-const store = useStore();
+const store = useState();
 
-const someComputed = computed(() => "nuxt + ts + composition-api");
+const someComputed = computed(() => "nuxt + ts + composition-api + ");
 
 onBeforeMount(() => {
   console.log("works!");
 });
-
 </script>
 
 <template>
