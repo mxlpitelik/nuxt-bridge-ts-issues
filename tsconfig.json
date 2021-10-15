@@ -12,8 +12,6 @@
     "resolveJsonModule": true,
     "types": [
       "node",
-      "mocha",
-      "chai"
     ],
   },
   "exclude": [

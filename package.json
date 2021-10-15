@@ -1,8 +1,11 @@
 {
   "name": "example-hello-world",
   "private": true,
+  "dependencies": {
+    "nuxt-edge": "latest"
+  },
   "devDependencies": {
-    "nuxt3": "latest"
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27238235.a1bcc53"
   },
   "scripts": {
     "dev": "nuxt dev",

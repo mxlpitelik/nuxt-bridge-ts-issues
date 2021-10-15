@@ -11,6 +11,8 @@
 
 const props = defineProps({});
 const router = useRouter();
+
+// import from where ????
 const store = useStore();
 
 const someComputed = computed(() => "nuxt + ts + composition-api");
